@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope,$rootScope) {
+		/* widget controller */
+		var c = this;
+	
+		$rootScope.$on('selectList', function(event,data) {
+			c.server.get({
+				action: 'getList',
+				listID: $rootScope.listID
+			}).then(function(r) {
+				c.data.name = r.data.list.name;
+				c.data.remarks = r.data.list.remarks;
+				c.data.listID = r.data.list.sys_id;
+			});
+		});
+	}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>todo_form</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>ToDo Form</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+
+	if (input && input.listID) {
+		var listGr = new GlideRecord('x_373023_todo_list_todo_list');
+		if (listGr.get(input.listID)) {
+			if (input.action == 'getList') {
+				data.list = {};
+				$sp.getRecordValues(data.list, listGr, "name, remarks, sys_id");
+			}
+		}
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-19 14:39:09</sys_created_on>
+        <sys_id>1409e0a6db0a5010592c7b82399619ea</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>ToDo Form</sys_name>
+        <sys_package display_value="ToDo List" source="x_373023_todo_list">5ae294eadbc65010592c7b8239961923</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ToDo List">5ae294eadbc65010592c7b8239961923</sys_scope>
+        <sys_update_name>sp_widget_1409e0a6db0a5010592c7b82399619ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-19 15:19:42</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default" ng-show="c.data.listID">
+  <div class="panel-heading clearfix">
+    <div class="row">
+      <div class="col-md-12">
+        <input class="form-control" id="note-title" ng-model="c.data.name" />
+      </div>
+    </div>
+  </div>
+  <div class="panel-body">
+    <textarea class="form-control" id="note-body" ng-model="c.data.remarks" ></textarea>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

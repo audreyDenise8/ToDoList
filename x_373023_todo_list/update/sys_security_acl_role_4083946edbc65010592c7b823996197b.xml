@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-19 13:05:11</sys_created_on>
+        <sys_id>4083946edbc65010592c7b823996197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_373023_todo_list_todo_list.x_373023_todo_list.todo_list_user</sys_name>
+        <sys_package display_value="ToDo List" source="x_373023_todo_list">5ae294eadbc65010592c7b8239961923</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ToDo List">5ae294eadbc65010592c7b8239961923</sys_scope>
+        <sys_security_acl display_value="x_373023_todo_list_todo_list">c083946edbc65010592c7b8239961978</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_4083946edbc65010592c7b823996197b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-19 13:05:11</sys_updated_on>
+        <sys_user_role display_value="x_373023_todo_list.todo_list_user" name="x_373023_todo_list.todo_list_user">bf73946edbc65010592c7b823996193f</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

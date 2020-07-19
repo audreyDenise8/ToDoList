@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="user" label="User" language="en" table="x_373023_todo_list_todo_list">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <help/>
+            <hint/>
+            <label>User</label>
+            <language>en</language>
+            <name>x_373023_todo_list_todo_list</name>
+            <plural>Users</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-07-19 13:08:04</sys_created_on>
+            <sys_id>962410aedbc65010592c7b823996192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>User</sys_name>
+            <sys_package display_value="ToDo List" source="x_373023_todo_list">5ae294eadbc65010592c7b8239961923</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ToDo List">5ae294eadbc65010592c7b8239961923</sys_scope>
+            <sys_update_name>sys_documentation_x_373023_todo_list_todo_list_user_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-07-19 13:08:04</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

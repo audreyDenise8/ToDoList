@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_373023_todo_list_todo_list">x_373023_todo_list_todo_list</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>TOD</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-19 13:05:12</sys_created_on>
+        <sys_id>d883946edbc65010592c7b823996199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TOD</sys_name>
+        <sys_package display_value="ToDo List" source="x_373023_todo_list">5ae294eadbc65010592c7b8239961923</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ToDo List">5ae294eadbc65010592c7b8239961923</sys_scope>
+        <sys_update_name>sys_number_d883946edbc65010592c7b823996199d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-19 13:05:12</sys_updated_on>
+    </sys_number>
+</record_update>
